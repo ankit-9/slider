@@ -7,6 +7,7 @@ slider for slide image and text
 --need internet connection to load bootstrap and jquery CDN files
 
 -- remaining task :
+
     ) break main function in subfunction
     ) add on hover stop slider
     ) add next prv. button
