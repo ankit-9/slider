@@ -1,13 +1,12 @@
 jQuery.fn.extend({
     start_slider : function(){
       var that = this;
-      var selecter = $(this);
-      var img_selecter = selecter.find("img");
-      var text_selecter = selecter.find(".slider-text");
+      var img_selecter = $(that).find("img");
+      var text_selecter = $(that).find(".slider-text");
       var current_index = 0;
       var last_index = (img_selecter.length - 1);
-      var slide_interval = selecter.data('slidechange-interval');
-      var animation_interval = selecter.data('animation-interval');
+      var slide_interval = $(that).data('slidechange-interval');
+      var animation_interval = $(that).data('animation-interval');
 
       loop = setInterval(function () {
         current_slide = current_index;
@@ -25,20 +24,9 @@ jQuery.fn.extend({
           img_selecter.eq(current_index).addClass("next");
           text_selecter.eq(current_index).addClass("next");
           setTimeout(function(){
-            img_selecter.eq(next_slide).animate({left:400},animation_interval,function(){
-              img_selecter.eq(next_slide).removeClass("active").removeAttr("style");
-            });
-            img_selecter.eq(current_index).animate({left:0},animation_interval,function(){
-              img_selecter.eq(current_index).removeClass("next").addClass("active").removeAttr("style");
-            });
-
-            text_selecter.eq(next_slide).animate({right:400},animation_interval,function(){
-              text_selecter.eq(next_slide).removeClass("active").removeAttr("style");
-            });
-            text_selecter.eq(current_index).animate({right:0},animation_interval,function(){
-              text_selecter.eq(current_index).removeClass("next").addClass("active").removeAttr("style");
-              selecter.start_slider(); // recall start_slider
-            });
+            that.slide_animate_left(img_selecter,next_slide,current_index,animation_interval);
+            that.slide_animate_right(text_selecter,next_slide,current_index,animation_interval);
+            setTimeout(function(){that.start_slider();},animation_interval);
           },slide_interval); // end setTimeout
         } // end if
       }, slide_interval); // end setInterval
