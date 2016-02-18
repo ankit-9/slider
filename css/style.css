@@ -32,7 +32,7 @@ body{
     display: block;
     margin: 0px auto;
     overflow: hidden;
-    background-color: #ddd;
+    background-color: #dadada;
 }
 .a9-slider img{
     position: absolute;
@@ -49,22 +49,30 @@ body{
 .a9-slider img.next{
     z-index: 9;
 }
-.a9-slider .slider-text{
+.a9-slider .text-container{
     position: absolute;
-    bottom: 20px;
-    right: -400px;
-    z-index: 2;
-    text-align: center;
-    padding: 15px;
+    bottom: 0px;
     width: inherit;
+    height: 130px;
+    overflow: hidden;
+    padding: 15px 0px;
+    margin: 0px;
 }
-.a9-slider .text-active{
+.a9-slider .text-container .active{
     right: 0px;
     z-index: 10;
 }
-.a9-slider .text-next{
+.a9-slider .text-container .next{
     z-index: 10;
 }
-
-
+.a9-slider .slider-text{
+    position: absolute;
+    right: -400px;
+    z-index: 2;
+    text-align: center;
+    width: inherit;
+}
+.a9-slider .slider-text h2{
+    margin-top: 0px;
+}
 

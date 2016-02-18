@@ -40,22 +40,24 @@
                       <img class="" src="./img/photo_default.png">
                       <img class="" src="./img/photo_default.png">
                       <img class="" src="./img/photo_default.png">
-                      <div class="slider-text text-active">
-                        <h2>First Slide</h2>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                      </div>
-                      <div class="slider-text">
-                        <h2>Second Slide</h2>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                      </div>
-                      <div class="slider-text">
-                        <h2>Third Slide</h2>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                      </div>
-                      <div class="slider-text">
-                        <h2>Fourth Slide</h2>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                      </div>
+                      <dir class="text-container">
+                        <div class="slider-text active">
+                          <h2>First Slide</h2>
+                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                        <div class="slider-text">
+                          <h2>Second Slide</h2>
+                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                        <div class="slider-text">
+                          <h2>Third Slide</h2>
+                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                        <div class="slider-text">
+                          <h2>Fourth Slide</h2>
+                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                      </dir>
                     </div>
                   </div>
               </div>
