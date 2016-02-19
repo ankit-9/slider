@@ -1,0 +1,51 @@
+.simple-slider{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0px auto;
+    overflow: hidden;
+    background-color: #dadada;
+}
+.simple-slider img{
+    position: absolute;
+    top: 0px;
+    left: -400px;
+    z-index: 1;
+    max-width: 100%;
+    max-height: 100%;
+}
+.simple-slider img.active{
+    left: 0px;
+    z-index: 9;
+}
+.simple-slider img.next{
+    z-index: 9;
+}
+.simple-slider .text-container{
+    position: absolute;
+    bottom: 0px;
+    width: inherit;
+    height: 130px;
+    overflow: hidden;
+    padding: 15px 0px;
+    margin: 0px;
+}
+.simple-slider .text-container .active{
+    right: 0px;
+    z-index: 10;
+}
+.simple-slider .text-container .next{
+    z-index: 10;
+}
+.simple-slider .slider-text{
+    position: absolute;
+    right: -400px;
+    z-index: 2;
+    text-align: center;
+    width: inherit;
+}
+.simple-slider .slider-text h2{
+    margin-top: 0px;
+}
+
