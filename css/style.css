@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
-/* default */
 *{
     font-family: 'Roboto';
     font-size: 14px;
@@ -14,14 +13,12 @@ body{
     color: #727272;
     border-radius: 0px;
 }
-/* site structure */
-.header,.main,.footer{
+.header, .main, .footer{
     padding: 15px 0px;
 }
 .footer{
     padding-top: 100px;
 }
-
 .header h1{
     margin: 0px;
 }
